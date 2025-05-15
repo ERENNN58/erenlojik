@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!-- HTML5 standardında bir belge olduğunu belirtir -->
+<html lang="tr">
+<!-- Sayfa dili İngilizce olarak ayarlandı -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Karakter seti UTF-8 olarak belirlendi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobil uyumluluk için viewport ayarlarını yapar -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Harici CSS dosyasını projeye dahil eder -->
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons ikon kütüphanesini yükler -->
+
+    <title>Portfolio website complete</title>
+    <!-- Tarayıcı sekmesinde görünecek başlık -->
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <!-- Sabit üst menü alanı -->
+        <nav class="nav bd-grid">
+            <!-- Grid tabanlı navigasyon çubuğu -->
+            <div>
+                <a href="#" class="nav__logo">Eren</a>
+                <!-- Logo veya marka ismi -->
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <!-- Menü kapsayıcı (mobil açılır/kapanır) -->
+                <ul class="nav__list">
+                    <!-- Menü öğeleri listesi -->
+                    <li class="nav__item"><a href="#ev" class="nav__link active-link">Home</a></li>
+                    <!-- Ana sayfa bağlantısı -->
+                    <li class="nav__item"><a href="#hakkında" class="nav__link">About</a></li>
+                    <!-- Hakkımda bağlantısı -->
+                    <li class="nav__item"><a href="#yetenekler" class="nav__link">Skills</a></li>
+                    <!-- Yetenekler bağlantısı -->
+                    <li class="nav__item"><a href="#iş" class="nav__link">Work</a></li>
+                    <!-- Projeler bağlantısı -->
+                    <li class="nav__item"><a href="#iletişim" class="nav__link">Contact</a></li>
+                    <!-- İletişim bağlantısı -->
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <!-- Mobil menü ikonu -->
+                <i class='bx bx-menu'></i>
+                <!-- Hamburger menü simgesi -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- Ana içerik alanı -->
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <!-- Ana sayfa bölümü -->
+            <div class="home__data">
+                <!-- Tanıtım metni alanı -->
+                <h4 class="home__title"><br>ben <span class="home__title-color">Eren</span><br>okuyorum ve çalışıyorum </h4>
+                <!-- Başlık ve ad -->
+                <a href="https://x.com/erendoan1611251?s=21" class="button">iletşim </a>
+                <!-- İletişim butonu -->
+            </div>
+
+            <div class="home__social">
+                <!-- Sosyal medya ikonları -->
+                <a href="www.linkedin.com/ineren-doğan-a25b3b2a7" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <!-- LinkedIn ikonu -->
+                <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                <!-- Behance ikonu -->
+                <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <!-- GitHub ikonu -->
+            </div>
+
+            <div class="home__img">
+                <!-- Profil resmi ve SVG maskeleme -->
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- SVG konteyner -->
+                        <mask id="mask0" mask-type="alpha"> <!-- Maske tanımı -->
+                            <path d="1261,1575 9,9 1275,7"/> <!-- Maske şekli -->
+                        </mask>
+                        <g mask="url(#mask0)"> <!-- Maske uygulanan grup -->
+                            <path d="1261,1575 9,9 1275,7"/> <!-- Arka plan şekli -->
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/> <!-- Profil resmi -->
+                        </g>
+                    </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <!-- Hakkımda bölümü -->
+            <h2 class="section-title">About</h2>
+            <!-- Bölüm başlığı -->
+
+            <div class="about__container bd-grid">
+                <!-- Grid düzeni -->
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                    <!-- Hakkımda görseli -->
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">BEN EREN DOĞAN</h2>
+                    <!-- Alt başlık -->
+                    <p class="about__text">Otomasyon alanında uygulamalı bilgiye sahip, saha ve panel montajı deneyimi bulunan, aynı zamanda teknik eğitimine devam eden bir otomasyon teknikeriyim. EPLAN ile elektrik projelendirme, GMT Suite ile sistem konfigürasyonu ve PLC
+                        programlama konularında yetkinim. Problem çözme odaklı yaklaşımım ve öğrenmeye açık yapım sayesinde ekip çalışmalarına kolay adapte olurum.</p>
+                    <!-- Açıklama metni -->
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <!-- Yetenekler bölümü -->
+            <h3 class="section-title">YETENEKLERİM</h3>
+            <!-- Bölüm başlığı -->
+
+            <div class="skills__container bd-grid">
+                <!-- Grid içeriği -->
+                <div>
+                    <h2 class="skills__subtitle">YETENEKLERİM</h2>
+                    <!-- Alt başlık -->
+                    <p class="skills__text">Yapmış olduğum 3 katlı PLC tabanlı asansör projesi, otomasyon alanındaki bilgi ve becerilerimi uygulamalı olarak geliştirmemi sağladı. Bu projede hem elektriksel devre tasarımı hem de PLC programlaması tarafında aktif görev aldım.Ayrıca
+                        çeşitli otomasyon uygulamalarında, özellikle pano montajı, saha bağlantıları, sensör ve motor entegrasyonu gibi konularda pratik deneyim kazandım. Bu süreçler sayesinde hem teknik çizim okuma, hem de endüstriyel kontrol sistemlerinin
+                        kurulumu ve devreye alınması konularında önemli tecrübeler edindim.
+
+                    </p>
+                    <!-- Açıklama metni -->
+                    <div class="skills__data">
+                        <!-- Yetenek veri bloğu -->
+                        <div class="skills__names">
+                            <!-- İsim ve ikon -->
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <!-- HTML5 ikonu -->
+                            <span class="skills__name">HTML5</span>
+                            <!-- HTML5 adı -->
+                        </div>
+                        <div class="skills__bar skills__html">
+                            <!-- Yetenek seviyesi barı -->
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                            <!-- Yüzdelik -->
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <!-- CSS3 veri bloğu -->
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <!-- CSS3 ikonu -->
+                            <span class="skills__name">gmtsuit</span>
+                            <!-- CSS3 adı -->
+                        </div>
+                        <div class="skills__bar skills__css">
+                            <!-- Bar -->
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                            <!-- Yüzde -->
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <!-- JS veri bloğu -->
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <!-- JavaScript ikonu -->
+                            <span class="skills__name">eaplan</span>
+                            <!-- İsim -->
+                        </div>
+                        <div class="skills__bar skills__js">
+                            <!-- Bar -->
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                            <!-- Yüzde -->
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <!-- UX/UI veri bloğu -->
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <!-- UX/UI ikonu -->
+                            <span class="skills__name">UX/UI</span>
+                            <!-- İsim -->
+                        </div>
+                        <div class="skills__bar skills__ux">
+                            <!-- Bar -->
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                            <!-- Yüzde -->
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <!-- Yetenek görseli -->
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="İŞ HAYATI">
+            <!-- Projeler bölümü -->
+            <h3 class="section-title">İŞ HAYATI</h3>
+            <!-- Başlık -->
+
+            <div class="work__container bd-grid">
+                <!-- Proje görsel kapsayıcı -->
+                <a href="" class="work__img">
+                    <img src="assets/img/work1.jpg" alt="eren">
+                    <!-- Proje 1 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                    <!-- Proje 2 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work3.jpg" alt="ERENNNNNNNNNNN">
+                    <!-- Proje 3 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                    <!-- Proje 4 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                    <!-- Proje 5 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                    <!-- Proje 6 -->
+                </a>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="PROJELER">
+            <!-- Projeler bölümü -->
+            <h3 class="section-title">Projeler</h3>
+            <!-- Başlık -->
+
+            <div class="work__container bd-grid">
+                <!-- Proje görsel kapsayıcı -->
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör 1.jpg" alt="">
+                    <!-- asansör 1 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör 2.jpg" alt="">
+                    <!--  asansör 2 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör3.jpg" alt="">
+                    <!-- asansör 3 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör 4.jpg" alt="">
+                    <!-- asansör 4 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör5.jpg" alt="">
+                    <!-- asnsör 5 -->
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/asansör6.jpg" alt="">
+                    <!-- asasnör  6 -->
+                </a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <!-- İletişim bölümü -->
+            <h3 class="section-title">Contact</h3>
+            <!-- Başlık -->
+
+            <div class="contact__container bd-grid">
+                <!-- Form kapsayıcı -->
+                <form action="" class="contact__form">
+                    <!-- İletişim formu -->
+                    <input type="text" placeholder="İsim" class="contact__input">
+                    <!-- İsim alanı -->
+                    <input type="mail" placeholder="MAİL" class="contact__input">
+                    <!-- Email alanı -->
+                    <textarea name="" id="ed78450@gmail.com" cols="0" rows="10" class="contact__input"></textarea>
+                    <!-- Mesaj alanı -->
+                    <input type="button" value="Gönder" class="contact__button button">
+                    <!-- Gönder düğmesi -->
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <!-- Alt bilgi alanı -->
+        <p class="footer__title">EREN DOĞAN </p>
+        <!-- Site başlığı -->
+        <div class="footer__social">
+            <!-- Sosyal ikonlar kapsayıcısı -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+            <a href=""><i class='fa-solid fa-photo-film'></i></a>
+            <a href="https://www.instagram.com/eren_dogann58?igsh=MTV5dWtlcmN4OWM0bA==" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <!-- Instagram -->
+            <a href="https://x.com/erendoan1611251?s=21" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <!-- Twitter -->
+        </div>
+        <p class="footer__copy">&#169; LOJİK.OTOMASYON</p>
+        <!-- Telif hakkı metni -->
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll animasyonu kütüphanesi -->
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <!-- Ana JavaScript dosyası -->
+</body>
+
+</html>
